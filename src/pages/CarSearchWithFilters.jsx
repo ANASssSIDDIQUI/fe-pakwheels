@@ -28,7 +28,7 @@ function CarSearchWithFilters() {
     };
 
     try {
-      const response = await axios.get("http://localhost:3000/api/cars", {
+      const response = await axios.get("https://be-pakwheels.vercel.app/api/cars", {
         params: payload,
       });
       setCarResults(response.data);

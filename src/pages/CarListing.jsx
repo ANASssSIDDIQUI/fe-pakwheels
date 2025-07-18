@@ -8,7 +8,7 @@ function CarListing() {
 
   useEffect(() => {
     const getCarList = async () => {
-      const response = await axios.get('http://localhost:3000/api/cars');
+      const response = await axios.get('https://be-pakwheels.vercel.app/api/cars');
       setCarsData(response.data);
     };
 

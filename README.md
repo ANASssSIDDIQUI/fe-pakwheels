@@ -90,4 +90,8 @@ npm run dev
 
 ## 🪪 License
 
+<<<<<<< HEAD
 MIT © 2025
+=======
+MIT © 2025
+>>>>>>> 56fd23d (Final Commit)

@@ -33,7 +33,7 @@ const AddNewListing = () => {
     };
 
     const addCar = async () => {
-      const response = await axios.post("http://localhost:3000/api/cars" , payload);
+      const response = await axios.post("https://be-pakwheels.vercel.app/api/cars" , payload);
       console.log(response)
     };
     addCar();

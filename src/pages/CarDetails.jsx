@@ -10,7 +10,7 @@ const CarDetails = () => {
   useEffect(() => {
     if (id) {
       const getCarData = async () => {
-        const response = await axios.get(`http://localhost:3000/api/cars/${id}`);
+        const response = await axios.get(`https://be-pakwheels.vercel.app/api/cars/${id}`);
         setCar(response.data);
       };
       getCarData();
