@@ -10,7 +10,7 @@ const CarDetails = () => {
   useEffect(() => {
     if (id) {
       const getCarData = async () => {
-        const response = await axios.get(`https://be-pakwheels-production.up.railway.app/api/cars/${id}`);
+        const response = await axios.get(`https://be-pakwheels-production-b99b.up.railway.app/api/cars${id}`);
         setCar(response.data);
       };
       getCarData();
