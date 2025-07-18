@@ -154,11 +154,27 @@ function CarSearchWithFilters() {
         )}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {carResults.map((car) => (
-            <div key={car.id} className="bg-white rounded-lg shadow p-4">
-              <img src={car.image} alt={car.model} className="w-full h-40 object-cover rounded" />
-              <h2 className="mt-2 text-lg font-semibold">{car.make} {car.model}</h2>
-              <p className="text-sm text-gray-600">{car.location}</p>
-              <p className="text-green-600 font-bold mt-1">PKR {car.price.toLocaleString()}</p>
+            <div
+              key={car.id}
+              className="bg-white rounded-lg shadow-md overflow-hidden"
+            >
+              <img
+                src={car.image}
+                alt={`${car.make} ${car.model}`}
+                className="w-full h-40 object-cover"
+              />
+              <div className="p-3">
+                <h2 className="text-base font-bold text-gray-800">
+                  {car.make} {car.model}
+                </h2>
+                <p className="text-sm text-gray-600">
+                  {car.year} | {car.condition}
+                </p>
+                <p className="text-green-600 font-bold text-lg mt-1">
+                  Rs. {Number(car.price).toLocaleString()}
+                </p>
+                <p className="text-sm text-gray-500">{car.location}</p>
+              </div>
             </div>
           ))}
         </div>
