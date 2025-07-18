@@ -8,7 +8,7 @@ function CarListing() {
 
   useEffect(() => {
     const getCarList = async () => {
-      const response = await axios.get('https://be-pakwheels-production.up.railway.app/api/cars');
+      const response = await axios.get('https://be-pakwheels-production-b99b.up.railway.app/api/cars');
       setCarsData(response.data);
     };
 
