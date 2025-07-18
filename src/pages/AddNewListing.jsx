@@ -33,7 +33,7 @@ const AddNewListing = () => {
     };
 
     const addCar = async () => {
-      const response = await axios.post("https://be-pakwheels-production.up.railway.app/api/cars" , payload);
+      const response = await axios.post("https://be-pakwheels-production-b99b.up.railway.app/api/cars" , payload);
       console.log(response)
     };
     addCar();
